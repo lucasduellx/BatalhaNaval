@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+button{
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 50%;
+    height: 30px;
+    background-color: rgb(156, 63, 63);
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+    background: coral;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.organiza-btn-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}

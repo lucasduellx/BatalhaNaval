@@ -1,0 +1,19 @@
+<div id="organiza-horizontal">
+    <div class="svg-barco">
+        <img src="../../assets/battleship.svg">
+    </div>
+
+    
+    <div id="start-info">
+
+        <h4>Tamanho do mapa:</h4><input type="number" #quadrado class="text-box">
+        
+        <h4>Quantidade de navios: </h4><input type="number" #navio class="text-box">
+        
+        <br>
+
+        <button (click)="iniciaGame(quadrado.value, navio.value, 0)" class="btn-radius"><strong>Single Player</strong></button>
+        <button (click)="iniciaGame(quadrado.value, navio.value, 1)" class="btn-radius"><strong>One versus One</strong></button>
+
+    </div>
+</div>

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 2.5em;
+}
+
+h4{
+    font-size: 2.0em;
+}
+
+a{
+    text-decoration: none;
+}
+
+td{
+    border: 2px solid red;
+    height: 30px;
+    width: 30px;
+}
+
+td:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.texto-centralizado{
+    text-align: center;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#corpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(122, 193, 221);
+    padding: 20px 0;
+}

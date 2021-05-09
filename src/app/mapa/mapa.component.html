@@ -1,0 +1,21 @@
+<table>
+    <td class="legends-sem-nada"></td>
+    <td *ngFor="let linha of gameService.tamanhoMapa; let i = index" [attr.data-index]="i" class="legenda legenda-cima">{{ i }}</td>
+    <tr *ngFor="let linha of gameService.tamanhoMapa; let i = index" [attr.data-index]="i">
+        <td class="legenda legenda-esquerda">{{transformaEmLetra(65, i)}}</td> 
+
+        <td *ngFor="let linhae of gameService.tamanhoMapa; let j = index" [attr.data-index]="j"
+        (click)="atira(i, j)" [id]="'' + i + j" 
+        [ngClass]="{
+            'padrao-sem-hover': mapaAtual.posicao[i][j].estado == '0' && !resposta && mapaAtual.fimDeJogo,
+            'padrao': mapaAtual.posicao[i][j].estado == '0' && !resposta && !mapaAtual.fimDeJogo,
+            'errou': (mapaAtual.posicao[i][j].estado == '1' && !resposta) || (mapaAtual.posicao[i][j].perfil == 0 && resposta),
+            'acertou': (mapaAtual.posicao[i][j].estado == '2' && !resposta) || (mapaAtual.posicao[i][j].perfil == 1 && resposta)
+        }"
+        >
+        
+        </td>
+
+    </tr>
+
+</table>

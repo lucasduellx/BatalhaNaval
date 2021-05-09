@@ -1,0 +1,18 @@
+<div class="game">
+    <h1 [ngStyle]="{
+        'color': status == 'ERROU' ? 'red' : status == 'ACERTOU' ? 'green' : status == 'RIP' ? 'black' : status == 'Parabains' ? 'black' : 'black'
+    
+    }"> {{ status }} </h1>
+    
+    <mapa [mapaAtual]="mapaAtual" [resposta]="resposta" (shoot)="atira($event)"></mapa>
+    
+    <h3 class="margin-top"> Tiros Restantes: {{ qntTiros }} </h3>
+    <h3 class="margin-top"> Navios Restantes: {{ mapaAtual.naviosRestantes }} </h3>
+    <h4 class="margin-top">{{ messagem }} </h4>
+    
+    <div class="organiza-btn-flex">
+        <button *ngIf="mapaAtual.fimDeJogo" (click)="mostraRespostas()" style="margin-right: 5px;">{{ strResposta }}</button>
+        <button (click)="voltaHome()">Início</button>
+    </div>
+</div>
+

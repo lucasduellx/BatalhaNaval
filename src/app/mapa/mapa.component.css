@@ -1,0 +1,51 @@
+td{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.legenda{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}
+
+.legenda-sem-nada{
+    background-color: transparent;
+    border: 0px transparent;
+}
+
+.legenda-cima{
+    border-bottom: 5px solid rgb(122, 193, 221);
+}
+
+.legenda-esquerda{
+    border-right: 5px solid rgb(122, 193, 221);
+}
+
+.errou{
+    background-color: red;
+}
+
+.acertou{
+    background-color: green;
+}
+
+.padrao{
+    background-color: rgb(44, 169, 201);
+}
+
+.padrao:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.padrao-sem-hover{
+    background-color: rgb(44, 169, 201);
+}
+
+.margin-top{
+    margin-top: 10px;
+}

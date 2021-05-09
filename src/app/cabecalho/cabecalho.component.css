@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+h4{
+    font-size: 2.0em;
+}
+
+a{
+    text-decoration: none;
+}
+
+#cabecalho {
+    height: 100px;
+    background-color: rgb(233, 233, 168);
+}
+
+#instagrams{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icn-instagram{
+    display: flex;
+    font-size: 1.5em;
+    margin: 10px 40px 5px 5px;
+    align-items: flex-start;
+    justify-content: center;
+    color:rgb(77, 62, 62) ;
+}
+.svg-barco{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: -100px;
+}
+
+.icn-instagram img{
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.texto-centralizado{
+    text-align: center;
+}
+
+.white-color{
+    color: rgb(81, 155, 168);
+}

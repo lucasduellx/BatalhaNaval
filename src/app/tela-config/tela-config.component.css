@@ -1,0 +1,76 @@
+/*
+------ Formatação inicial ------
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 2.5em;
+}
+
+h4{
+    font-size: 2.0em;
+}
+
+a{
+    text-decoration: none;
+}
+
+td{
+    border: 2px solid red;
+    height: 30px;
+    width: 30px;
+}
+
+td:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+/*
+------ Módulos para reutilização ------
+*/
+
+.texto-centralizado{
+    text-align: center;
+}
+
+
+.text-box{
+    margin: 10px 0px;
+    border-radius: 1px;
+    width: 300px;
+    height: 25px;
+}
+
+.btn-radius{
+    display: flex;
+    border-radius: 2px;
+    padding: 15px;
+    margin: 5px auto;
+    background-color: rgb(236, 164, 188);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.btn-radius:hover {
+    cursor: pointer;
+}
+
+#start-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.svg-barco{
+    margin-right: calc(10% + 10px);
+}
+
+#organiza-horizontal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

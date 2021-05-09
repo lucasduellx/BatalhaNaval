@@ -1,0 +1,13 @@
+<div class="game">
+    
+    <mapa [mapaAtual]="mapaAtual[0]" [resposta]="resposta" (shoot)="atira($event, 0)"></mapa>
+    
+    <br><br><br>
+    
+    <mapa [mapaAtual]="mapaAtual[1]" [resposta]="resposta" (shoot)="atira($event, 1)"></mapa>
+    
+    <div class="organiza-btn-flex">
+        <button *ngIf="mapaAtual[0].fimDeJogo" (click)="mostraRespostas()" style="margin-right: 5px;">{{ strResposta }}</button>
+        <button (click)="voltaHome()">Início</button>
+    </div>
+</div>
